@@ -4,7 +4,7 @@ This script is useful for running an raffle where you are giving away _n_
 identical items to _p_ participants where _n < p_. Each participant will have a
 equal probability of having one of the items by the end of the simulation.
 
-Mathematically, this relies on "Algoritm R" for reservoir sampling:
+Mathematically, this relies on "Algorithm R" for reservoir sampling:
 
     A = array of the first n elements from population
     j <- n
