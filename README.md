@@ -6,15 +6,18 @@ equal probability of having one of the items by the end of the simulation.
 
 Mathematically, this relies on "Algorithm R" for reservoir sampling:
 
-    A = array of the first n elements from population
-    j <- n
-    for each of the remaining elements in the population as e (
-        j <- j + 1
-        if Bernoulli(n / j) (
-            Choose a random element from A and swap it with e
+    procedure Sample(population, n) (
+        Δ A is an array of size n
+        Initialize A to the first n elements from population
+        j <- n
+        for each of the remaining elements in the population as e (
+            j <- j + 1
+            if Bernoulli(n / j) (
+                Choose a random element from A and swap it with e
+            )
         )
+        return A
     )
-    return A
 
 A proof that this algorithm creates a random sample can be found
 [here](https://en.wikipedia.org/wiki/Reservoir_sampling#Algorithm_R).
