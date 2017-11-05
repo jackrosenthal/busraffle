@@ -1,7 +1,7 @@
 # _n_-item Raffle Simulation using "Algorithm R" aka. "Crazy Bus Driver Algorithm"
 
 This script is useful for running an raffle where you are giving away _n_
-identical items to _p_ participants where _n < p_. Each participant will have a
+identical items to an unknown number _p_ participants where _n <= p_. Each participant will have a
 equal probability of having one of the items by the end of the simulation.
 
 Mathematically, this relies on "Algorithm R" for reservoir sampling:
@@ -26,16 +26,19 @@ Here is a sample run of the script:
 
     What are you giving away? shirts
     How many shirts are you giving away? 10
-    How many people are participating? 35
+    Do you want to enter names? (y/N) n
     To start, participants 0 through 9 get one of the shirts (for now...)
 
     List anyone who was gone, end with a blank line...
     4
     Participant 10 gets one of the shirts (for now) then.
 
-    Is participant 11 here (y/n)? y
+    Continue with participant 11 (Y/n)? y
     Nothing happened.
-    Is participant 12 here (y/n)? y
+    Continue with participant 12 (Y/n)? y
     Participant 12 steals one of the shirts from participant 6!
     ...
-
+    Continue with particpant 54 (Y/n)? n
+    Quit entirely (y/N)? y
+    
+    Winners are: 0, 14, 3, 48, 22, 35, 50, and 25!
